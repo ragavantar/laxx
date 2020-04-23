@@ -27,22 +27,37 @@ import Sling from './sling';
 
 import * as serviceWorker from './serviceWorker';
 
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            page: 'intro'
+         }
+    }
+
+    Intro = () => {
+        return(
+            <div>
+                <button onClick={()=>this.setState({page: 'jump'})}>Jump Game</button>
+                <button onClick={()=>this.setState({page: 'sling'})}>Slingshot Game</button>
+            </div>
+        )
+    }
+    render() { 
+        const { page } = this.state;
+        return ( 
+            <div>
+                { page=='intro' && this.Intro()}
+                { page=='jump' && <Jump />}
+                { page=='sling' && <Sling />}
+            </div>
+         );
+    }
+}
+ 
+export default App;
 ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            <Route path="/sling">
-                <Sling />
-            </Route>
-            <Route path="/jump">
-                <Jump />
-            </Route>
-            <Route path="/">
-                /jump :  matter js jump
-                <br></br>
-                /sling :  matter js sling shooter
-            </Route>
-        </Switch>
-    </BrowserRouter>
+    <App />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
