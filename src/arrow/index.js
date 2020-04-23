@@ -56,7 +56,7 @@ class Slab {
     changePosition = () => {
         this.position++;
         let pos = (this.position)%3;
-        console.log(pos);
+        // console.log(pos);
 
         if(pos == 0) {
             // position bottom
@@ -99,12 +99,12 @@ class Slab {
     }
 }
 
-
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            score: 0
+            score: 0,
+            intro: true
         }
     }
 
@@ -122,6 +122,10 @@ class App extends Component {
     slab2 = null;
 
     componentDidMount() {
+
+        setTimeout(() => {
+            this.setState({intro: false})
+        }, 5000);
 
         this.myEngine = Engine.create();
 
@@ -163,6 +167,7 @@ class App extends Component {
         World.add(this.myEngine.world, [boxA]);
 
         document.addEventListener('keydown', this.jumpme);
+        document.addEventListener('click', this.jumpme);
         
         this.slab1 = new Slab(this.myEngine, slab1Position, 0);
         
@@ -194,7 +199,7 @@ class App extends Component {
     }
 
     jumpme = (e) => {
-        console.log(` ${e.code}`);
+        // console.log(` ${e.code}`);
         if (this.isJumping) return;
         this.isJumping = true;
         let boxA = this.myPlayer
@@ -217,7 +222,7 @@ class App extends Component {
                 if (this.isSlabColliding()) {
                     Body.set(boxA, 'isSensor', false)
                     // Body.set(boxA, 'isStatic', true)
-                    console.log('collided')
+                    // console.log('collided')
                     this.setState({score : this.state.score+10})
                     this.slabCollided()
                     resetPlayer()
@@ -292,12 +297,12 @@ class App extends Component {
         //     boxA.position.y < slab.position.y && boxA.bounds.min.x > slab.bounds.min.x && boxA.bounds.max.x < slab.bounds.max.x
         // );
 
-        console.log(
-            (boxA.bounds.max.y-4) < slab.bounds.min.y
-            , boxA.position.y < slab.position.y
-            ,boxA.position.x >= slab.bounds.min.x 
-            ,boxA.position.x <= slab.bounds.max.x
-        )
+        // console.log(
+        //     (boxA.bounds.max.y-4) < slab.bounds.min.y
+        //     , boxA.position.y < slab.position.y
+        //     ,boxA.position.x >= slab.bounds.min.x 
+        //     ,boxA.position.x <= slab.bounds.max.x
+        // )
         return (
             // collision.collided
             // ||
@@ -311,11 +316,11 @@ class App extends Component {
     isDead = () => {
         let boxA = this.myPlayer
         let { x, y } = boxA.position 
-        console.log(
-            x < 0  //left
-            ,x > window.innerWidth //right
-            ,y > window.innerHeight //bottom
-        )
+        // console.log(
+        //     x < 0  //left
+        //     ,x > window.innerWidth //right
+        //     ,y > window.innerHeight //bottom
+        // )
         return (
             x < 0  //left
             || x > window.innerWidth //right
@@ -368,6 +373,18 @@ class App extends Component {
                 </div>
                 {/* Arrow */}
                 <div ref={ref=>this.ele=ref}></div>
+
+                
+                {
+                this.state.intro &&
+                <div
+                style={{...score, top: '30%', width: '80%', padding: '20px', background: 'grey', border: '2px solid black', color: 'white'}}
+                >
+                    Jump 5 slabs to get 50 points to complete the game.
+                    <br></br>
+                    If you get to the spikes, you are dead and game over
+                </div>
+                }
             </div>
         );
     }
