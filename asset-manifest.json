@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/laxx/static/css/main.03e79eb6.chunk.css",
-    "main.js": "/laxx/static/js/main.9239eb06.chunk.js",
-    "main.js.map": "/laxx/static/js/main.9239eb06.chunk.js.map",
+    "main.js": "/laxx/static/js/main.89ae200c.chunk.js",
+    "main.js.map": "/laxx/static/js/main.89ae200c.chunk.js.map",
     "runtime-main.js": "/laxx/static/js/runtime-main.158bbd42.js",
     "runtime-main.js.map": "/laxx/static/js/runtime-main.158bbd42.js.map",
-    "static/js/2.3923e217.chunk.js": "/laxx/static/js/2.3923e217.chunk.js",
-    "static/js/2.3923e217.chunk.js.map": "/laxx/static/js/2.3923e217.chunk.js.map",
+    "static/js/2.77f93114.chunk.js": "/laxx/static/js/2.77f93114.chunk.js",
+    "static/js/2.77f93114.chunk.js.map": "/laxx/static/js/2.77f93114.chunk.js.map",
     "index.html": "/laxx/index.html",
-    "precache-manifest.ef1329bed270df207e214bfb2cb300b4.js": "/laxx/precache-manifest.ef1329bed270df207e214bfb2cb300b4.js",
+    "precache-manifest.e593420221aa0b041c6343df682bbefe.js": "/laxx/precache-manifest.e593420221aa0b041c6343df682bbefe.js",
     "service-worker.js": "/laxx/service-worker.js",
     "static/css/main.03e79eb6.chunk.css.map": "/laxx/static/css/main.03e79eb6.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.158bbd42.js",
-    "static/js/2.3923e217.chunk.js",
+    "static/js/2.77f93114.chunk.js",
     "static/css/main.03e79eb6.chunk.css",
-    "static/js/main.9239eb06.chunk.js"
+    "static/js/main.89ae200c.chunk.js"
   ]
 }

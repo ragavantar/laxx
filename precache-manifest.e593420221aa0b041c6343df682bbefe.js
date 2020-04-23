@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f645d31fb92ff4726befe92efb5fbb3",
+    "revision": "a72b420cf3bfe6fd2757b022b2d50894",
     "url": "/laxx/index.html"
   },
   {
-    "revision": "72f12c6b13f14bd5f44c",
+    "revision": "547e646e81b2f2c7f429",
     "url": "/laxx/static/css/main.03e79eb6.chunk.css"
   },
   {
-    "revision": "f0b743d8013df3c01bcc",
-    "url": "/laxx/static/js/2.3923e217.chunk.js"
+    "revision": "aed1426d74b7a5963f13",
+    "url": "/laxx/static/js/2.77f93114.chunk.js"
   },
   {
-    "revision": "72f12c6b13f14bd5f44c",
-    "url": "/laxx/static/js/main.9239eb06.chunk.js"
+    "revision": "547e646e81b2f2c7f429",
+    "url": "/laxx/static/js/main.89ae200c.chunk.js"
   },
   {
     "revision": "8dafd914c2d9e2054db9",
