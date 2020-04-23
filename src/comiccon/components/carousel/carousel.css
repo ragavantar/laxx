@@ -1,0 +1,17 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'); */
+
+
+.cover-flow .slick-active.slick-center.slick-current {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms ease;
+    padding: 4px 0;
+}
+
+.cover-flow .slick-slide {
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 300ms ease;
+    padding: 4px 0;
+}

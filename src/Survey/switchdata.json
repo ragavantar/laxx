@@ -1,0 +1,122 @@
+{
+    "data": [],
+    "pageTitle": "User Survey",
+    "widgets": {
+        "backgroundImage": "",
+        "backgroundColor": "#f4f4f4",
+        "data": [
+            {
+                "type": "Textbox",
+                "name": "displayname",
+                "title": "Your profile name to display"
+            },
+            {
+                "type": "Radiobutton",
+                "name": "gender",
+                "title": "Choose your gender",
+                "options": [
+                    "Male",
+                    "Female"
+                ]
+            },
+            {
+                "type": "RangeSlider",
+                "name": "budget",
+                "title": "Choose your budget range",
+                "min": 0,
+                "max": 10000,
+                "initialValue": 100
+            },
+            {
+                "type": "StarRating",
+                "name": "rating",
+                "title": "Rate your experience so far on myntra"
+            },
+            {
+                "type": "SingleSelect",
+                "name": "profession",
+                "title": "Choose your profession",
+                "options": [
+                    "Student",
+                    "Working",
+                    "Business"
+                ]
+            },
+            {
+                "type": "MultipleSelect",
+                "name": "hobby",
+                "title": "Choose your hobbies",
+                "options": [
+                    "Watching movies",
+                    "Listening to music",
+                    "Sports",
+                    "Dance",
+                    "Singing"
+                ]
+            },
+            {
+                "type": "SingleSelectImage",
+                "name": "hate",
+                "title": "Choose the style you hate",
+                "options": [
+                    {
+                        "value": "option 1",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/222a42cb-338c-429d-a027-fb9639761a2b1581670118927-Work-Men.png"
+                    },
+                    {
+                        "value": "option 2",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/fce722ba-242d-477a-b498-5027bf69981a1581670118995-Vacation-Men.png"
+                    },
+                    {
+                        "value": "option 3",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/86543d75-14de-4f3f-b341-4c0eb2d139721581670119142-Party-Men.png"
+                    }
+                ]
+            },
+            {
+                "type": "MultipleSelectImage",
+                "name": "favourite",
+                "title": "Choose you favourite styles",
+                "options": [
+                    {
+                        "value": "option 1",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/222a42cb-338c-429d-a027-fb9639761a2b1581670118927-Work-Men.png"
+                    },
+                    {
+                        "value": "option 2",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/fce722ba-242d-477a-b498-5027bf69981a1581670118995-Vacation-Men.png"
+                    },
+                    {
+                        "value": "option 3",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/86543d75-14de-4f3f-b341-4c0eb2d139721581670119142-Party-Men.png"
+                    }
+                ]
+            },
+            {
+                "type": "MultipleSelectImage",
+                "name": "color",
+                "title": "Choose you favourite color",
+                "options": [
+                    {
+                        "value": "option 1",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/222a42cb-338c-429d-a027-fb9639761a2b1581670118927-Work-Men.png"
+                    },
+                    {
+                        "value": "option 2",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/fce722ba-242d-477a-b498-5027bf69981a1581670118995-Vacation-Men.png"
+                    },
+                    {
+                        "value": "option 3",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/86543d75-14de-4f3f-b341-4c0eb2d139721581670119142-Party-Men.png"
+                    }
+                ]
+            },
+            {
+                "type": "EndCard",
+                "title": "EndCard: Thank you for your feedback",
+                "button": "Continue Shopping",
+                "url": "http://myntra.com"
+            }
+        ]
+    }
+}

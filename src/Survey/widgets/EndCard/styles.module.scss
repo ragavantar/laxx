@@ -1,0 +1,15 @@
+.widget {
+    .title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .button {
+        border: 1px solid grey;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 16px;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}

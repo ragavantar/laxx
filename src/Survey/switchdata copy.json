@@ -1,0 +1,102 @@
+{
+    "data": [],
+    "pageTitle": "User Survey",
+    "widgets": {
+        "backgroundImage": "",
+        "backgroundColor": "#f4f4f4",
+        "data": [
+            {
+                "type": "Textbox",
+                "name": "textbox",
+                "title": "Textbox : Question"
+            },
+            {
+                "type": "Radiobutton",
+                "name": "radiobutton",
+                "title": "Radiobutton : Question",
+                "options": [
+                    "option 1",
+                    "option 2",
+                    "option 3"
+                ]
+            },
+            {
+                "type": "RangeSlider",
+                "name": "rangeSlider",
+                "title": "RangeSlider : Question",
+                "min": 0,
+                "max": 100,
+                "initialValue": 70
+            },
+            {
+                "type": "StarRating",
+                "name": "starRating",
+                "title": "StarRating : Question"
+            },
+            {
+                "type": "SingleSelect",
+                "name": "singleSelect",
+                "title": "SingleSelect : Question",
+                "options": [
+                    "option 1",
+                    "option 2",
+                    "option 3"
+                ]
+            },
+            {
+                "type": "MultipleSelect",
+                "name": "multipleSelect",
+                "title": "MultipleSelect : Question",
+                "options": [
+                    "option 1",
+                    "option 2",
+                    "option 3"
+                ]
+            },
+            {
+                "type": "SingleSelectImage",
+                "name": "singleSelectImage",
+                "title": "SingleSelectImage : Question",
+                "options": [
+                    {
+                        "value": "option 1",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/222a42cb-338c-429d-a027-fb9639761a2b1581670118927-Work-Men.png"
+                    },
+                    {
+                        "value": "option 2",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/fce722ba-242d-477a-b498-5027bf69981a1581670118995-Vacation-Men.png"
+                    },
+                    {
+                        "value": "option 3",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/86543d75-14de-4f3f-b341-4c0eb2d139721581670119142-Party-Men.png"
+                    }
+                ]
+            },
+            {
+                "type": "MultipleSelectImage",
+                "name": "MultipleSelectImage",
+                "title": "MultipleSelectImage : Question",
+                "options": [
+                    {
+                        "value": "option 1",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/222a42cb-338c-429d-a027-fb9639761a2b1581670118927-Work-Men.png"
+                    },
+                    {
+                        "value": "option 2",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/fce722ba-242d-477a-b498-5027bf69981a1581670118995-Vacation-Men.png"
+                    },
+                    {
+                        "value": "option 3",
+                        "img": "https://assets.myntassets.com/assets/images/retaillabs/2020/2/14/86543d75-14de-4f3f-b341-4c0eb2d139721581670119142-Party-Men.png"
+                    }
+                ]
+            },
+            {
+                "type": "EndCard",
+                "title": "EndCard: Thank you for your feedback",
+                "button": "Continue Shopping",
+                "url": "http://myntra.com"
+            }
+        ]
+    }
+}

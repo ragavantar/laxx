@@ -1,0 +1,22 @@
+.radioWidget {
+    .title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .star {
+        display: inline;
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 8px;
+        opacity: 0;
+        animation: fade 1s;
+        animation-fill-mode: forwards;
+        
+    }
+}
+
+@keyframes fade {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  

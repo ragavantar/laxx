@@ -1,3 +1,13 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
+h3{
+  text-align: center;
+  margin: 5px;
+  background: green;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +20,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#bg{
+  height: 200vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://png.pngtree.com/png-clipart/20190516/original/pngtree-splendid-curve-particle-electro-acoustic-line-background-png-image_3846680.jpg');
+}
+
+.leaf{
+  width: 50px;
+  height: 50px;
 }
