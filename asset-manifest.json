@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/laxx/static/css/main.e805b00e.chunk.css",
-    "main.js": "/laxx/static/js/main.c126cff8.chunk.js",
-    "main.js.map": "/laxx/static/js/main.c126cff8.chunk.js.map",
+    "main.js": "/laxx/static/js/main.413ba6f6.chunk.js",
+    "main.js.map": "/laxx/static/js/main.413ba6f6.chunk.js.map",
     "runtime-main.js": "/laxx/static/js/runtime-main.158bbd42.js",
     "runtime-main.js.map": "/laxx/static/js/runtime-main.158bbd42.js.map",
     "static/js/2.83fa501d.chunk.js": "/laxx/static/js/2.83fa501d.chunk.js",
     "static/js/2.83fa501d.chunk.js.map": "/laxx/static/js/2.83fa501d.chunk.js.map",
     "index.html": "/laxx/index.html",
-    "precache-manifest.4bf0176015585c8924bce381f25b4548.js": "/laxx/precache-manifest.4bf0176015585c8924bce381f25b4548.js",
+    "precache-manifest.8686c51d1907ee72af938e346076f590.js": "/laxx/precache-manifest.8686c51d1907ee72af938e346076f590.js",
     "service-worker.js": "/laxx/service-worker.js",
     "static/css/main.e805b00e.chunk.css.map": "/laxx/static/css/main.e805b00e.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.158bbd42.js",
     "static/js/2.83fa501d.chunk.js",
     "static/css/main.e805b00e.chunk.css",
-    "static/js/main.c126cff8.chunk.js"
+    "static/js/main.413ba6f6.chunk.js"
   ]
 }
