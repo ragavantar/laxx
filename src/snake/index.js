@@ -133,7 +133,7 @@ class Snake extends Component {
         //gen left box ele
         for (let i = top+1; i < bottom; i++) 
             bounds.push(<div className={[styles.box, styles.rocks].join(' ')} style={this.getStyle(left, i)} />)
-        //gen top box ele
+        //gen right box ele
         for (let i = top+1; i < bottom; i++) 
             bounds.push(<div className={[styles.box, styles.rocks].join(' ')} style={this.getStyle(right, i)} />)
 

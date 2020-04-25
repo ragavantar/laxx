@@ -23,6 +23,7 @@ import Jump from './arrow';
 import Sling from './sling';
 // import Slick from './slick';
 import Snake from './snake';
+import Pacman from './pacman';
 
 // import Survey from './Survey';
 
@@ -41,7 +42,8 @@ class App extends React.Component {
             <div>
                 <button onClick={()=>this.setState({page: 'jump'})}>Jump Game</button>
                 <button onClick={()=>this.setState({page: 'sling'})}>Slingshot Game</button>
-                <button onClick={()=>this.setState({page: 'snake'})}>Slingshot Game</button>
+                <button onClick={()=>this.setState({page: 'snake'})}>Snake Game</button>
+                <button onClick={()=>this.setState({page: 'pac'})}>Pac man Game</button>
                 <b>
                     From Game <br></br>
                     to come back to this menu <br></br>
@@ -58,6 +60,7 @@ class App extends React.Component {
                 { page=='jump' && <Jump />}
                 { page=='snake' && <Snake />}
                 { page=='sling' && <Sling />}
+                { page=='pac' && <Pacman />}
             </div>
          );
     }
@@ -66,6 +69,7 @@ class App extends React.Component {
 export default App;
 ReactDOM.render(
     <App />
+    // <Pacman />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

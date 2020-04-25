@@ -1,0 +1,64 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.board {
+    width: 300px;
+    position: relative;
+    background: black;
+    .box {
+        border: 1px solid gray;
+        font-size: 15px;
+        position: absolute;
+        text-align: center;
+
+        &.rocks {
+            background: #ff000033;
+            border: 1px solid red; 
+        }
+
+        &.player {
+            border: 1px solid white;
+            color: snow;
+            background: green;
+            border-radius: 30%; 
+        }
+
+        &.food {
+            color: yellow;
+        }
+
+        &.enemy {
+            border: 1px solid #000e1f;
+            color: snow;
+            background: #244b86;
+            border-radius: 30%; 
+        }
+    }
+}
+
+.controls {
+    margin-top: 50px; 
+    div {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+        width: 100px;
+        margin: auto;
+        border: 2px solid yellow;
+        background: #0000005e;
+        color: yellow;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .left, .right {
+        display: inline-block;
+    }
+    .right {
+        float: right;
+    }
+}
