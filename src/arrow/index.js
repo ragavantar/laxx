@@ -382,7 +382,9 @@ class Jump extends Component {
                 >
                     Jump 5 slabs to get 50 points to complete the game.
                     <br></br>
-                    If you get to the spikes, you are dead and game over
+                    If you get to the spikes, you are dead and game over.
+                    <br></br>
+                    This will hide in 5 seconds.
                 </div>
                 }
             </div>

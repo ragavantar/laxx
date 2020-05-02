@@ -1,0 +1,30 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: white;
+    position: fixed;
+}
+
+.board {
+    background: #8b451338;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div{
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        // display: inline-block;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        &.active {
+            background: white;
+            color: black;
+        }
+    }
+}
