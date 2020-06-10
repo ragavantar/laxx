@@ -1,0 +1,20 @@
+.carousel {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.carousel .element {
+    position: relative;
+    max-width: 30vw; /* optional */
+    display: inline-block;
+}
+
+.carousel .element img {
+    width: 100%;
+}
+
+.carousel .element .name {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}

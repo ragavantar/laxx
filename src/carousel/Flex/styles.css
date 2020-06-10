@@ -1,0 +1,21 @@
+.flex-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.flex-carousel .element {
+    max-width: 30vw; /* optional */
+    flex-shrink: 0;
+    position: relative;
+}
+
+.flex-carousel .element img {
+    width: 100%;
+}
+
+.flex-carousel .element .name {
+    position: absolute;
+    top: 0;
+    color: white;
+}

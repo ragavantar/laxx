@@ -31,6 +31,7 @@ import Universe from './universe';
 
 import * as serviceWorker from './serviceWorker';
 import Wordament from './wordament';
+import Carousel from './carousel';
 
 class App extends React.Component {
     constructor(props) {
@@ -43,6 +44,7 @@ class App extends React.Component {
     Intro = () => {
         return(
             <div>
+                <button onClick={()=>this.setState({page: 'carousel'})}>Carousel</button>
                 <button onClick={()=>this.setState({page: 'jump'})}>Jump Game</button>
                 <button onClick={()=>this.setState({page: 'sling'})}>Slingshot Game</button>
                 <button onClick={()=>this.setState({page: 'snake'})}>Snake Game</button>
@@ -68,6 +70,7 @@ class App extends React.Component {
                 { page=='pac' && <Pacman />}
                 { page=='word' && <Wordament />}
                 { page=='universe' && <Universe />}
+                { page=='carousel' && <Carousel />}
             </div>
          );
     }
@@ -76,7 +79,7 @@ class App extends React.Component {
 export default App;
 ReactDOM.render(
     <App />
-    // <Universe />
+    // <Carousel />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
