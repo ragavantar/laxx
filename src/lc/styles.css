@@ -12,6 +12,7 @@
 .col {
     display: inline-block;
     border: 1px dotted;
+    overflow: hidden;
 }
 
 .col div {
@@ -21,13 +22,13 @@
 }
 
 .hit {
-    background: #0080003d;
+    background: #c4dac4;
     font-weight: bold;
     border: 2px solid green;
 }
 
 .sl {
-    background: #ff00003b;
+    background: #f3a9a9;
     font-weight: bold;
     border: 2px solid red;
 }
@@ -44,4 +45,19 @@ input {
     text-align: center;
     box-sizing: border-box;
     font-size: 16px;
+}
+
+.total {
+    font-size: 22px;
+    border-bottom: 1px dashed;
+    padding: 5px;
+    font-weight: bold;
+    background: darkgoldenrod;
+}
+
+.contact {
+    font-size: 22px;
+    padding: 5px;
+    font-weight: bold;
+    background: lightsteelblue;
 }

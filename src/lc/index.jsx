@@ -12,6 +12,7 @@ class LC extends Component {
         super(props);
         this.state = {
             date: +new Date(),
+            pl: true,
             script: [
                 {
                     name: "Crude Oil",
@@ -125,13 +126,13 @@ class LC extends Component {
     }
 
     render() {
-        const { script } = this.state;
+        const { script, pl } = this.state;
         console.log(script)
         return (
             <div className="container">
                 level chart
                 <div className="chart">
-                    <div className="col" style={{background: 'seashell'}}>
+                    <div className="col" style={{ background: 'seashell' }}>
                         <div className="target">{getDate()}</div>
                         <div className="target">Target 3</div>
                         <div className="target">Target 2</div>
@@ -142,11 +143,11 @@ class LC extends Component {
                         <div className="target">Target 1</div>
                         <div className="target">Target 2</div>
                         <div className="target">Target 3</div>
-                        <div className="target">P / L</div>
+                        {pl && <div className="target">P / L</div>}
                     </div>
                     {
                         script.map((val, index) =>
-                            <div className="col" style={{background: val.background}}>
+                            <div className="col" style={{ background: val.background }}>
                                 <div>{val.name}</div>
                                 <div><input className={val.hit.includes('bt3') ? 'hit' : undefined} onDoubleClick={() => this.onHit(index, 'bt3', 'buy')} type={'number'} value={val.bt3} onChange={(e) => this.updateValue(index, 'bt3', e.target.value)} /></div>
                                 <div><input className={val.hit.includes('bt2') ? 'hit' : undefined} onDoubleClick={() => this.onHit(index, 'bt2', 'buy')} type={'number'} value={val.bt2} onChange={(e) => this.updateValue(index, 'bt2', e.target.value)} /></div>
@@ -159,13 +160,25 @@ class LC extends Component {
                                 <div><input className={val.hit.includes('st1') ? 'hit' : undefined} onDoubleClick={() => this.onHit(index, 'st1', 'sell')} type={'number'} value={val.st1} onChange={(e) => this.updateValue(index, 'st1', e.target.value)} /></div>
                                 <div><input className={val.hit.includes('st2') ? 'hit' : undefined} onDoubleClick={() => this.onHit(index, 'st2', 'sell')} type={'number'} value={val.st2} onChange={(e) => this.updateValue(index, 'st2', e.target.value)} /></div>
                                 <div><input className={val.hit.includes('st3') ? 'hit' : undefined} onDoubleClick={() => this.onHit(index, 'st3', 'sell')} type={'number'} value={val.st3} onChange={(e) => this.updateValue(index, 'st3', e.target.value)} /></div>
-                                <div><input className="pl" value={val.pl} onChange={(e) => this.updateValue(index, 'pl', e.target.value)} /></div>
+                                {pl && <div><input className="pl" value={val.pl} onChange={(e) => this.updateValue(index, 'pl', e.target.value)} /></div>}
                             </div>
                         )
                     }
-                    <div>Contact</div>
+                    {pl && <div className="total">
+                        Total : &nbsp;
+                        {
+                            script.reduce((sum, comm) => sum + (comm.pl || 0), 0)
+                        }
+                    </div>
+                    }
+                    <div className="contact">
+                        Contact : Rakesh 9265279666
+                    </div>
                 </div>
 
+                <button onClick={() => this.setState({ pl: !pl })}>
+                    Toggle pl
+                </button>
                 <div>
                     targets - double click - target hit
                     <br />
