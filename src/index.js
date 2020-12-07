@@ -32,12 +32,15 @@ import Universe from './universe';
 import * as serviceWorker from './serviceWorker';
 import Wordament from './wordament';
 import Carousel from './carousel';
+import Filter from './filter';
+
+import LC from './lc';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            page: 'intro'
+            page: 'lc'
          }
     }
 
@@ -56,6 +59,8 @@ class App extends React.Component {
                     to come back to this menu <br></br>
                     refresh the page
                 </b>
+                <button onClick={()=>this.setState({page: 'filter'})}>filter</button>
+                <button onClick={()=>this.setState({page: 'lc'})}>level chart</button>
             </div>
         )
     }
@@ -63,6 +68,8 @@ class App extends React.Component {
         const { page } = this.state;
         return ( 
             <div>
+                { page=='filter' && <Filter />}
+                { page=='lc' && <LC />}
                 { page=='intro' && this.Intro()}
                 { page=='jump' && <Jump />}
                 { page=='snake' && <Snake />}
